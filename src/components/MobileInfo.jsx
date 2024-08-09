@@ -5,7 +5,6 @@ import styled from "styled-components";
 
 const MobileInfo = () => {
   const { phoneObject } = useSelector((store) => store.phones);
-  console.log("PhoneId: ", );
   const navigate = useNavigate();
   const handerBack = () => {
     navigate("/");
