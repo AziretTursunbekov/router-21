@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../components/cart/layout/MainLayout";
-import Main from "../components/cart/layout/Main";
+import Main from "../components/layout/Main";
 import Profile from "../pages/Profile";
 import About from "../pages/About";
-import Phones from "../pages/Phones";
-import MobileInfo from "../components/mobileInfo";
+// import Phones from "../pages/Phones";
+import MobileInfo from "../components/MobileInfo";
+import MainLayout from "../components/layout/MainLayout";
+
 export const routes = createBrowserRouter([
   {
     path: "/",
@@ -22,10 +23,7 @@ export const routes = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
-      {
-        path: "/phones",
-        element: <Phones />,
-      },
+
       {
         path: "/mobileInfo/:PhoneId",
         element: <MobileInfo />,

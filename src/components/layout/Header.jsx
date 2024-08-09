@@ -6,7 +6,9 @@ const Header = () => {
   return (
     <StyledHeader>
       <h1>
-        <Link to={"/"}>Mobile</Link>
+        <Link to={"/"} style={{ textDecoration: "none" }}>
+          Mobile
+        </Link>
       </h1>
       <StyledDiv>
         <NavLink
@@ -23,7 +25,7 @@ const Header = () => {
           about
         </NavLink>
         <NavLink
-          to="phones"
+          to="/"
           className={({ isActive }) => (isActive ? "active" : "inactive")}
         >
           phones

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import CartList from "../CartList";
+import CartList from "../cart/CartList";
 
 const Main = () => {
   return (
@@ -11,6 +11,7 @@ const Main = () => {
 };
 
 export default Main;
+
 const StyledMain = styled.main`
   width: 100%;
   height: 100vh;
